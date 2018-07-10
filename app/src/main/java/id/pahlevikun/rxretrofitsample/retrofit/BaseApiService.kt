@@ -1,5 +1,6 @@
 package id.pahlevikun.rxretrofitsample.retrofit
 
+import id.pahlevikun.rxretrofitsample.model.Mockup
 import id.pahlevikun.rxretrofitsample.model.ResponseRepos
 import io.reactivex.Observable
 import retrofit2.http.GET
@@ -10,5 +11,9 @@ import retrofit2.http.GET
 
 interface BaseApiService {
     @GET("users/pahlevikun/repos")
-    fun requestRepos(): Observable<List<ResponseRepos>>
+    fun requestRepos(): Observable<Array<ResponseRepos>>
+
+
+    @GET("test")
+    fun requestMockup(): Observable<Mockup>
 }

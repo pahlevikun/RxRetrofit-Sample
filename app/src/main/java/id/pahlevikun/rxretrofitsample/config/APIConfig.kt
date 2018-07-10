@@ -6,6 +6,7 @@ package id.pahlevikun.rxretrofitsample.config
 class APIConfig {
 
     companion object {
-        const val END_POINT = "https://api.github.com/"
+        const val END_POINT = "https://demo6041696.mockable.io/"
+        const val MOCKUP = "https://demo6041696.mockable.io/"
     }
 }

@@ -11,4 +11,7 @@ import id.pahlevikun.rxretrofitsample.retrofit.RetrofitClient
 object UtilsApi {
     val apiService: BaseApiService
         get() = RetrofitClient.getClient(APIConfig.END_POINT).create(BaseApiService::class.java)
+
+    val apiDummy: BaseApiService
+        get() = RetrofitClient.getClient(APIConfig.MOCKUP).create(BaseApiService::class.java)
 }
